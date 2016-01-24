@@ -125,7 +125,6 @@ abbr[title] {
  */
 i,
 cite,
-em,
 var,
 address,
 dfn {
@@ -138,17 +137,21 @@ dfn {
 }
 
 /**
- * voiceクラスの指定されたi要素は、
- * 台詞としてマークアップする
+ * em要素は「強勢」として、
+ * voiceクラスの指定されたi要素は「台詞」として
+ * マークアップする
  */
+em,
 i.voice {
   font-style: normal;
 }
 
+em,
 i.voice:before {
   content: '\300C';
 }
 
+em,
 i.voice:after {
   content: '\300D';
 }
