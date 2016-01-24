@@ -146,12 +146,12 @@ i.voice {
   font-style: normal;
 }
 
-em,
+em:before,
 i.voice:before {
   content: '\300C';
 }
 
-em,
+em:after,
 i.voice:after {
   content: '\300D';
 }
