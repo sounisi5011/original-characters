@@ -83,3 +83,12 @@ a {
 img {
   vertical-align: middle;
 }
+
+/**
+ * キャラクター解説ページにおける、情報用のスタイル
+ */
+.character_property {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
