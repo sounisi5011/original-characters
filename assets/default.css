@@ -119,6 +119,19 @@ abbr[title] {
   }
 }
 
+/**
+ * font-styleプロパティの初期値ではメイリオフォントで斜体にならないため、上書き
+ * http://kotori-blog.com/css/meiryo_italic/
+ */
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: oblique;
+}
+
 .character-list dd+dt {
   margin-top: 24px;
   margin-top: 1.5rem;
