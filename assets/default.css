@@ -146,9 +146,9 @@ i.voice {
 }
 
 i.voice:before {
-  content: "「";
+  content: \300C;
 }
 
 i.voice:after {
-  content: "」";
+  content: \300D;
 }
