@@ -99,6 +99,10 @@ ol {
   padding-left: 0;
 }
 
+abbr[title] {
+  cursor: help;
+}
+
 .character-list dd+dt {
   margin-top: 24px;
   margin-top: 1.5rem;
