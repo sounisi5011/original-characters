@@ -108,6 +108,15 @@ ol {
 
 abbr[title] {
   cursor: help;
+  text-decoration: none;
+}
+
+@supports (text-decoration: underline) and (text-decoration-style: dotted) {
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
 }
 
 .character-list dd+dt {
