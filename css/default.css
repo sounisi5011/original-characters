@@ -1,0 +1,83 @@
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block;
+}
+
+datalist, template {
+  display: none;
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+
+bdi, output {
+  unicode-bidi: -moz-isolate;
+  unicode-bidi: -webkit-isolate;
+  unicode-bidi: isolate;
+}
+
+html {
+  line-height: 1.5;
+  /**
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', '游ゴシック体', 'Yu Gothic', YuGothic, 'メイリオ', Meiryo, sans-serif;
+  /**/
+  font-family: 'Hiragino Kaku Gothic ProN', '\30d2\30e9\30ae\30ce\89d2\30b4  ProN W3', \6e38\30b4\30b7\30c3\30af\4f53, 'Yu Gothic', YuGothic, \30e1\30a4\30ea\30aa, Meiryo, sans-serif;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, table, pre {
+  margin-top: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.3333;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  line-height: 1.5rem;
+}
+
+h4, h5, h6 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  line-height: 1.5rem;
+}
+
+p, li, dt, dd, th, td, pre {
+  -ms-line-break: strict;
+  line-break: strict;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+img {
+  vertical-align: middle;
+}
