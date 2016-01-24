@@ -27,6 +27,13 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  background-color: #111;
+  color: #eee;
+}
+
+:root {
+  background-color: #111;
+  color: #eee;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl, table, pre {
