@@ -29,6 +29,7 @@ html {
   -webkit-font-smoothing: antialiased;
   background-color: #111;
   color: #eee;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl, table, pre {
@@ -84,11 +85,16 @@ img {
   vertical-align: middle;
 }
 
-/**
- * キャラクター解説ページにおける、情報用のスタイル
- */
-.character_property {
+ul,
+ol,
+dl {
   display: table;
   margin-left: auto;
   margin-right: auto;
+  text-align: left;
+}
+
+ul,
+ol {
+  padding-left: 0;
 }
