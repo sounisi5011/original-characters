@@ -1,17 +1,9 @@
-article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-  display: block;
-}
-
-datalist, template {
+datalist {
   display: none;
 }
 
-mark {
-  background-color: yellow;
-  color: black;
-}
-
-bdi, output {
+bdi,
+output {
   unicode-bidi: -moz-isolate;
   unicode-bidi: -webkit-isolate;
   unicode-bidi: isolate;
@@ -22,24 +14,35 @@ html {
   /**
   font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', '游ゴシック体', 'Yu Gothic', YuGothic, 'メイリオ', Meiryo, sans-serif;
   /**/
-  font-family: 'Hiragino Kaku Gothic ProN', '\30d2\30e9\30ae\30ce\89d2\30b4  ProN W3', \6e38\30b4\30b7\30c3\30af\4f53, 'Yu Gothic', YuGothic, \30e1\30a4\30ea\30aa, Meiryo, sans-serif;
+  font-family: 'Hiragino Kaku Gothic ProN', '\30D2\30E9\30AE\30CE\89D2\30B4  ProN W3', \6E38\30B4\30B7\30C3\30AF\4F53, 'Yu Gothic', YuGothic, \30E1\30A4\30EA\30AA, Meiryo, sans-serif;
   word-wrap: break-word;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   background-color: #111;
   color: #eee;
+  text-align: center;
 }
 
-:root {
-  background-color: #111;
-  color: #eee;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, table, pre {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+table,
+pre {
   margin-top: 0;
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
+}
+
+li ul,
+li ol,
+dd dl {
+  margin-bottom: 0;
 }
 
 h1 {
@@ -63,14 +66,22 @@ h3 {
   line-height: 1.5rem;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
   line-height: 1.5rem;
 }
 
-p, li, dt, dd, th, td, pre {
+p,
+li,
+dt,
+dd,
+th,
+td,
+pre {
   -ms-line-break: strict;
   line-break: strict;
   -ms-word-break: normal;
@@ -87,4 +98,64 @@ a {
 
 img {
   vertical-align: middle;
+}
+
+ul,
+ol,
+dl {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+abbr[title] {
+  cursor: help;
+  text-decoration: none;
+}
+
+@supports (text-decoration: underline) and (text-decoration-style: dotted) {
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+}
+
+/**
+ * font-styleプロパティの初期値ではメイリオフォントで斜体にならないため、上書き
+ * http://kotori-blog.com/css/meiryo_italic/
+ */
+i,
+cite,
+var,
+address,
+dfn {
+  font-style: oblique;
+}
+
+body,
+.character-list dd+dt {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+
+/**
+ * em要素は「強勢」として、
+ * voiceクラスの指定されたi要素は「台詞」として
+ * マークアップする
+ */
+em,
+i.voice {
+  font-style: normal;
+}
+
+em:before,
+i.voice:before {
+  content: '\300C';
+}
+
+em:after,
+i.voice:after {
+  content: '\300D';
 }
