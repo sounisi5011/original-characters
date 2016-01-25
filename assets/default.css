@@ -109,11 +109,6 @@ dl {
   text-align: left;
 }
 
-ul,
-ol {
-  padding-left: 0;
-}
-
 abbr[title] {
   cursor: help;
   text-decoration: none;
