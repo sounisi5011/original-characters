@@ -39,6 +39,12 @@ pre {
   margin-bottom: 1.5rem;
 }
 
+li ul,
+li ol,
+dd dl {
+  margin-bottom: 0;
+}
+
 h1 {
   font-size: 48px;
   font-size: 3rem;
