@@ -21,6 +21,11 @@ html {
   color: #eee;
 }
 
+body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
