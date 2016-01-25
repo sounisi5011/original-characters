@@ -113,15 +113,6 @@ img {
   vertical-align: middle;
 }
 
-ul,
-ol,
-dl {
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-
 abbr[title] {
   cursor: help;
   text-decoration: none;
