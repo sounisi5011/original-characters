@@ -164,6 +164,6 @@ i.voice:after {
   content: '\300D';
 }
 
-#top_message {
+.top_message {
   text-align: center;
 }
