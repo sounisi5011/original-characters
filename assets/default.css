@@ -38,6 +38,15 @@ pre {
   margin-bottom: 1.5rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
 li ul,
 li ol,
 dd dl {
