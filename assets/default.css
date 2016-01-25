@@ -39,6 +39,12 @@ pre {
   margin-bottom: 1.5rem;
 }
 
+li ul,
+li ol,
+dd dl {
+  margin-bottom: 0;
+}
+
 h1 {
   font-size: 48px;
   font-size: 3rem;
@@ -101,11 +107,6 @@ dl {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-}
-
-ul,
-ol {
-  padding-left: 0;
 }
 
 abbr[title] {
