@@ -39,6 +39,12 @@ pre {
   margin-bottom: 1.5rem;
 }
 
+li ul,
+li ol,
+dd dl {
+  margin-bottom: 0;
+}
+
 h1 {
   font-size: 48px;
   font-size: 3rem;
@@ -60,7 +66,9 @@ h3 {
   line-height: 1.5rem;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -101,11 +109,6 @@ dl {
   text-align: left;
 }
 
-ul,
-ol {
-  padding-left: 0;
-}
-
 abbr[title] {
   cursor: help;
   text-decoration: none;
@@ -125,30 +128,34 @@ abbr[title] {
  */
 i,
 cite,
-em,
 var,
 address,
 dfn {
   font-style: oblique;
 }
 
+body,
 .character-list dd+dt {
   margin-top: 24px;
   margin-top: 1.5rem;
 }
 
 /**
- * voiceクラスの指定されたi要素は、
- * 台詞としてマークアップする
+ * em要素は「強勢」として、
+ * voiceクラスの指定されたi要素は「台詞」として
+ * マークアップする
  */
+em,
 i.voice {
   font-style: normal;
 }
 
+em:before,
 i.voice:before {
   content: '\300C';
 }
 
+em:after,
 i.voice:after {
   content: '\300D';
 }
