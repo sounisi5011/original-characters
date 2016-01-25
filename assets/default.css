@@ -102,11 +102,23 @@ pre {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
+  a:link {
+    color: #a5a5a5;
+  }
+
+  a:visited {
+    color: #5b5b5b;
+  }
+
+  a:active {
+    color: #f00;
+  }
+
   a:hover {
-    text-decoration: underline;
+    color: #fff;
   }
 
 img {
