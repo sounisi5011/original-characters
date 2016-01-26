@@ -19,9 +19,11 @@ html {
   -webkit-font-smoothing: antialiased;
   background-color: #111;
   color: #eee;
+  overflow-y: scroll;
 }
 
-body {
+body,
+.breadcrumb_list.fixed {
   width: 90%;
   max-width: 35em;
   margin: 0 auto;
@@ -170,7 +172,6 @@ dfn {
   font-style: oblique;
 }
 
-body,
 .character-list dd+dt {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -241,6 +242,55 @@ i.voice:after {
     width: 16.66666%;
     width: -webkit-calc(100% / 6);
     width: calc(100% / 6);
+  }
+
+.breadcrumb_list {
+  list-style-type: none;
+  border-bottom: solid 1px;
+  padding: 0;
+}
+
+.breadcrumb_list.fixed {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  background-color: #111;
+}
+
+.breadcrumb_list.dummy {
+  visibility: hidden;
+}
+
+  .breadcrumb_list li:before,
+  .breadcrumb_list a {
+    display: inline-block;
+  }
+
+  .breadcrumb_list li {
+    display: inline-block;
+  }
+
+  .breadcrumb_list li+li:before {
+    content: '\203A';
+    padding: 0 .5em;
+  }
+
+  .breadcrumb_list li.fragment_link:before {
+    content: '#';
+    padding-right: 0;
+  }
+
+  .breadcrumb_list li+li.fragment_link:before {
+    content: '\203A  #';
+  }
+
+  .breadcrumb_list a {
+    padding: 1em 0;
+  }
+
+  .breadcrumb_list .here a {
+    color: inherit;
+    text-decoration: none;
   }
 
 .top_message {
