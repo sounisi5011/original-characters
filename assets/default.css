@@ -208,6 +208,10 @@ i.voice:after {
     clear: both;
   }
 
+  .multi_column.col1 li {
+    width: 100%;
+  }
+
   .multi_column.col2 li {
     width: 50%;
   }
@@ -227,6 +231,12 @@ i.voice:after {
 
   .multi_column.col5 li {
     width: 20%;
+  }
+
+  .multi_column.col6 li {
+    width: 16.66666%;
+    width: -webkit-calc(100% / 6);
+    width: calc(100% / 6);
   }
 
 .top_message {
