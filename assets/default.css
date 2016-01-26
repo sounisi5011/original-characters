@@ -102,6 +102,8 @@ pre {
 }
 
 footer {
+  border-top: solid 1px;
+  padding: .5em 0;
   font-size: 80%;
   text-align: right;
 }
