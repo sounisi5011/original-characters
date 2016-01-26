@@ -286,6 +286,8 @@ i.voice:after {
 
   .breadcrumb_list a {
     padding: 1em 0;
+    padding-bottom: -webkit-calc(1em - 1px);
+    padding-bottom: calc(1em - 1px);
   }
 
   .breadcrumb_list .here a {
