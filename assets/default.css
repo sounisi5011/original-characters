@@ -21,7 +21,8 @@ html {
   color: #eee;
 }
 
-body {
+body,
+.breadcrumb_list.fixed {
   width: 90%;
   max-width: 35em;
   margin: 0 auto;
