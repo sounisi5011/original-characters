@@ -21,7 +21,8 @@ html {
   color: #eee;
 }
 
-body {
+body,
+.breadcrumb_list.fixed {
   width: 90%;
   max-width: 35em;
   margin: 0 auto;
@@ -240,6 +241,50 @@ i.voice:after {
     width: 16.66666%;
     width: -webkit-calc(100% / 6);
     width: calc(100% / 6);
+  }
+
+.breadcrumb_list {
+  list-style-type: none;
+  border-bottom: solid 1px;
+  padding: 0;
+}
+
+.breadcrumb_list.fixed {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  background-color: #111;
+}
+
+.breadcrumb_list.dummy {
+  visibility: hidden;
+}
+
+  .breadcrumb_list li:before,
+  .breadcrumb_list a {
+    display: inline-block;
+  }
+
+  .breadcrumb_list li {
+    display: inline-block;
+  }
+
+  .breadcrumb_list li:before {
+    content: '/';
+    padding: 0 .5em;
+  }
+
+  .breadcrumb_list li:first-child:before {
+    display: none;
+  }
+
+  .breadcrumb_list li.fragment_link:before {
+    content: '#';
+    padding-right: 0;
+  }
+
+  .breadcrumb_list a {
+    padding: 1em 0;
   }
 
 .top_message {
