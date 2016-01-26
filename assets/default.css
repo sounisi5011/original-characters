@@ -279,6 +279,10 @@ i.voice:after {
     padding-right: 0;
   }
 
+  .breadcrumb_list li+li.fragment_link:before {
+    content: '\203A  #';
+  }
+
   .breadcrumb_list a {
     padding: 1em 0;
   }
