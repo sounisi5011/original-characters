@@ -101,6 +101,18 @@ pre {
   word-break: normal;
 }
 
+footer {
+  font-size: 80%;
+}
+
+  footer p {
+    margin-bottom: 0;
+  }
+
+  footer small {
+    font-size: 100%;
+  }
+
 a {
   text-decoration: underline;
 }
