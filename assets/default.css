@@ -287,6 +287,11 @@ i.voice:after {
     padding: 1em 0;
   }
 
+  .breadcrumb_list .here a {
+    color: inherit;
+    text-decoration: none;
+  }
+
 .top_message {
   text-align: center;
 }
