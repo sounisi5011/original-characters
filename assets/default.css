@@ -270,7 +270,7 @@ i.voice:after {
   }
 
   .breadcrumb_list li:before {
-    content: '/';
+    content: '\203A';
     padding: 0 .5em;
   }
 
