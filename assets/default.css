@@ -277,7 +277,7 @@ i.voice:after {
     display: none;
   }
 
-  .breadcrumb_list li.anker_link:before {
+  .breadcrumb_list li.fragment_link:before {
     content: '#';
     padding-right: 0;
   }
