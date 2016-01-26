@@ -22,7 +22,8 @@ html {
 }
 
 body {
-  max-width: 600px;
+  width: 90%;
+  max-width: 35em;
   margin: 0 auto;
 }
 
