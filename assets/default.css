@@ -192,6 +192,43 @@ i.voice:after {
   content: '\300D';
 }
 
+.multi_column {
+  list-style-type: none;
+  padding: 0;
+}
+
+  .multi_column li {
+    display: block;
+    float: left;
+  }
+
+  .multi_column:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .multi_column.col2 li {
+    width: 50%;
+  }
+
+  /**
+   * see http://code-life.hatenablog.com/entry/2015/10/17/221011
+   */
+  .multi_column.col3 li {
+    width: 33.33333%;
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3);
+  }
+
+  .multi_column.col4 li {
+    width: 25%;
+  }
+
+  .multi_column.col5 li {
+    width: 20%;
+  }
+
 .top_message {
   text-align: center;
 }
