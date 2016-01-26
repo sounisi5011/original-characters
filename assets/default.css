@@ -269,18 +269,18 @@ i.voice:after {
     display: inline-block;
   }
 
-  .breadcrumb_list li:before {
-    content: '/';
+  .breadcrumb_list li+li:before {
+    content: '\203A';
     padding: 0 .5em;
-  }
-
-  .breadcrumb_list li:first-child:before {
-    display: none;
   }
 
   .breadcrumb_list li.fragment_link:before {
     content: '#';
     padding-right: 0;
+  }
+
+  .breadcrumb_list li+li.fragment_link:before {
+    content: '\203A  #';
   }
 
   .breadcrumb_list a {
