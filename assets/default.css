@@ -269,13 +269,9 @@ i.voice:after {
     display: inline-block;
   }
 
-  .breadcrumb_list li:before {
+  .breadcrumb_list li+li:before {
     content: '\203A';
     padding: 0 .5em;
-  }
-
-  .breadcrumb_list li:first-child:before {
-    display: none;
   }
 
   .breadcrumb_list li.fragment_link:before {
