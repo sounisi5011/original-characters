@@ -172,7 +172,7 @@ dfn {
   font-style: oblique;
 }
 
-.character-list dd+dt {
+.character_list dd+dt {
   margin-top: 24px;
   margin-top: 1.5rem;
 }
