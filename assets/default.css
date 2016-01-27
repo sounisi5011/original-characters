@@ -299,6 +299,20 @@ i.voice:after {
   text-align: center;
 }
 
+.view_on_github a {
+  display: block;
+  margin: 8px 0;
+  padding: 8px 0;
+  text-align: center;
+  opacity: .5;
+  transition: opacity .2s linear;
+}
+
+.view_on_github a:hover,
+.view_on_github a:focus {
+  opacity: 1;
+}
+
 .footer_link {
   margin: 0;
 }
