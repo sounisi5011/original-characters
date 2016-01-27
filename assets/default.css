@@ -172,11 +172,6 @@ dfn {
   font-style: oblique;
 }
 
-.character_list dd+dt {
-  margin-top: 24px;
-  margin-top: 1.5rem;
-}
-
 /**
  * em要素は「強勢」として、
  * voiceクラスの指定されたi要素は「台詞」として
@@ -250,6 +245,11 @@ i.voice:after {
 
 .top_message {
   text-align: center;
+}
+
+.character_list dd+dt {
+  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
 .view_on_github a {
