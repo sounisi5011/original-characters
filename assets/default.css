@@ -312,30 +312,3 @@ i.voice:after {
 .view_on_github a:focus {
   opacity: 1;
 }
-
-.footer_link {
-  margin: 0;
-}
-
-  .footer_link li {
-    text-align: center;
-  }
-
-  .footer_link a {
-    display: block;
-    margin: 1px;
-    padding: 1em 0;
-    background-color: #5b5b5b;
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.1s linear;
-  }
-
-  .footer_link a:active {
-    color: #f00;
-  }
-
-  .footer_link a:hover,
-  .footer_link a:focus {
-    background-color: #888;
-  }
