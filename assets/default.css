@@ -267,6 +267,17 @@ i.voice:after {
   border-radius: .25em;
 }
 
+.index_list ul {
+  list-style-type: none;
+  padding-left: 1em;
+}
+
+.index_list li:before {
+  content: '\2022';
+  position: absolute;
+  margin-left: -1em;
+}
+
 .view_on_github a {
   display: block;
   margin: 8px 0;
