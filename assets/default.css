@@ -274,8 +274,10 @@ i.voice:after {
 
 .index_list li:before {
   content: '\2022';
-  position: absolute;
   margin-left: -1em;
+  display: inline-block;
+  min-width: 1em;
+  text-align: center;
 }
 
 .view_on_github a {
