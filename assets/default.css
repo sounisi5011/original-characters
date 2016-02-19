@@ -293,3 +293,8 @@ i.voice:after {
 .view_on_github a:focus {
   opacity: 1;
 }
+
+.js_rp_invisible {
+  font-size: 0;
+  line-height: 0;
+}
